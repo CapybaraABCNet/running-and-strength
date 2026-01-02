@@ -1,0 +1,19 @@
+{
+    "Name": "Heisenberg",
+    "age": 51,
+    "chisl": 89,
+    "work": "Teacher",
+    "friend": "JP",
+    "family": [
+        "Hank",
+        "Mary",
+        "Walter J.",
+        "Skyler"
+    ],
+    "pom." : [
+        "JP",
+        "Maik",
+        "Gus Fring",
+        "Gale"
+    ]
+}

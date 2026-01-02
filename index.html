@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Фитнес-приложение <running and strength></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        <div class="logo1">
+            <img src="https://capybaraabcnet.github.io/Tamagochi-Capybara/photo_5228854488398422188_c.jpg" class="logo1"> 
+            <h1 class="m">CapybaraNET.WEB</h1>
+        </div>
+    </header>
+    <div class="w">
+        <h1>Фитнес-приложение running and strength</running></h1>
+        <p>RAS - Крутое фитнес приложение, тут есть многое, от калькулятора ИМТ до To-Do листа плана на тренировку</p>
+        <div class="container1">
+            <h2>Навигация по странице</h2>
+            <a href="#calc">Калькулятор ИМТ</a><br>
+            <a href="#calcd">Калькулятор калл.</a><br>
+            <a href="#gram">Переведенние из грамм. в кг</a><br>
+            <a href="#to-do">To-Do лист</a><br>
+            <a href="#seco">Секундомер</a>
+        </div>
+        <div>
+            <div class="container1" id="calc">
+                <h2>Кальулятор ИМТ</h2>
+                <p>(Введите рост через точку)</p>
+                <input id="kg" placeholder="Введите тут свой вес в кг" type="number">
+                <input id="rost" placeholder="Введите тут свой рост в метрах" type="number">
+                <button onclick="yznat()">Узнать</button>
+                <p id="text"></p>
+            </div>
+            <br>
+            <div class="container1" id="calcd">
+                <h2>Калькулятор калл.</h2>
+                <p>Введите тут первое число</p>
+                <input id="chislo1" type="number">
+                <p>Введите тут второе число</p>
+                <input id="chislo2" type="number">
+                <p>Введите тут мат. знак</p>
+                <div>
+                    <button onclick="pos('+')">+</button>
+                    <button onclick="pos('-')">-</button>
+                    <button onclick="pos('*')">*</button>
+                    <button onclick="pos('/')">/</button>
+                </div>
+                <br>
+                <p id="otvet"></p>
+            </div>
+            <br>
+            <div id="gram">
+                <div class="container1">
+                    <h2>Переведенние из грамм. в кг</h2>
+                    <input type="number" id="grammm" placeholder="Введите тут граммы"><br>
+                    <button onclick="ot()">Посчитать</button><br>
+                    <p id="otvet1"></p>
+                </div>
+                <br>
+                <div class="container1">
+                    <h2>И в обратную сторону</h2>
+                    <input type="number" id="kgg" placeholder="Введите тут кг"><br><br>
+                    <button onclick="pos1()">Посчитать</button><br>
+                    <p id="otvet2"></p>
+                </div>
+            </div>
+            <br>
+            <div class="container1" id="to-do">
+                <h2>План на тренировку</h2>
+                <input type="text" id="todo" placeholder="Сделайте тут запись">
+                <button onclick="plus()">+</button>
+                <p id="td"></p>
+            </div>
+            <div class="container1" id="seco">
+                <h2>Секундомер</h2>
+                <div><span id="hour">0</span>:<span id="minute">0</span>:<span id="second">0</span></div>
+                <button onclick="Go()">Начать</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
